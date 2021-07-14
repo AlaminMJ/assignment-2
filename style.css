@@ -142,8 +142,8 @@ img{
 }
 .match .container .match__details{
     width: 50%;
-    overflow: hidden;
     padding-right: 40px;
+
 
 }
 .match .container .match__details h1{
@@ -255,20 +255,36 @@ footer{
     align-items: center;
 }
 footer .logo-area img{
-    /* width: 350px; */
-    margin-bottom: 20px;
+    max-width: 350px ;
+}
+.social-area{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
 }
 
  footer .social-area a {
     width: 40px;
     height: 40px;
-  
     border-radius: 50%;
-    background-color: aqua;
-    display: inline-block;
+    background-color: #d8d8e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#969BAB;
+    font-size: 22px;
+    
+
 }
 footer .copy-write-area{
     margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
 }
 
 @media only screen and (max-width: 992px) {
@@ -331,17 +347,7 @@ footer .copy-write-area{
        align-items: flex-start;
        
     }
-    .match .container .match__details h1{
 
-        width: 500px;
-    
-    }
-    /* .match .container .match__details p{
-
-        
-
-        
-    } */
     .gellary .container .wraper{
         grid-template-columns: repeat(2,1fr);
         
