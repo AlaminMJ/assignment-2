@@ -29,7 +29,9 @@ img{
     height: auto;
     object-fit: cover;
 }
+
 /* -------------------- header section --------------------*/
+
 .header{
     width: 100%;
     background-color: #2D25A0;
@@ -58,8 +60,8 @@ img{
 .header .container .header__details a{
     
     background-color: #E02C6D;
-    margin-top: 5px;
-    padding: 8px 20px;
+    margin-top: 24px;
+    padding: 8px 25px;
     display: inline-block;
     text-align: center;
     color:#ffffff;
@@ -86,6 +88,7 @@ img{
 }
 
 /* -------------------- players section --------------------*/
+
 .players{
     width: 100%;
 
@@ -93,9 +96,8 @@ img{
 }
 .players .container{
     width: 75%;
-   margin: 0 auto;
-  
-   padding: 1rem 0;
+    margin: 0 auto;
+    padding: 1rem 0;
  
 }
 .players .container .wraper{
@@ -109,6 +111,18 @@ img{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+.players .container .wraper .player .image{
+    overflow: hidden;
+
+}
+.players .container .wraper .player .image img{
+    transition: all .5s ease;
+    width: 100%;
+    height: 100%;
+}
+.players .container .wraper .player:hover.player .image img{
+    transform: scale(1.03);
+}
 .player .name{
     color: #18191F;
     font-weight: 600;
@@ -122,10 +136,9 @@ img{
     font-size: 16px;
     line-height: 26px;
     color: #6C6C6C;
-}
+} 
 
-
-/*--------------------  match section -------------------- */
+    /*--------------------  match section -------------------- */
 
 .match{
     width: 100%;
@@ -162,7 +175,7 @@ img{
 .match .container .match__details a{
     
     background-color: #E02C6D;
-    margin-top: 10px;
+    margin-top: 24px;
     padding: 8px 20px;
     display: inline-block;
     text-align: center;
@@ -240,7 +253,7 @@ img{
 .gellary .container .wraper .item .over-lay a{
     color: #ffffff;
     font-size: 16px;
-    padding: 5px 20px;
+    padding: 5px 25px;
     font-weight: 400;
     background-color: #f34d8a;
 }
@@ -248,7 +261,7 @@ img{
 /*--------------------  footer section -------------------- */
 
 footer{
-    padding: 3rem 0;
+    padding: 3rem 0  5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,9 +343,12 @@ footer .copy-write-area{
         grid-template-columns: repeat(3,1fr);
         
     }
+    footer .logo-area img{
+        max-width: 300px ;
+    }
 
 }
-/* @media (min-width: 576px) { ... } */
+
 
 @media only screen and (max-width: 768px) {
     .players .container .wraper{ 
@@ -343,7 +359,7 @@ footer .copy-write-area{
         display: flex;
        flex-direction: column;
        row-gap: 3rem;
-       /* justify-content: flex-start; */
+       
        align-items: flex-start;
        
     }
@@ -351,6 +367,9 @@ footer .copy-write-area{
     .gellary .container .wraper{
         grid-template-columns: repeat(2,1fr);
         
+    }
+    footer .logo-area img{
+        max-width: 250px ;
     }
 
 }
