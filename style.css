@@ -379,26 +379,11 @@ footer .copy-write-area{
 
 @media only screen and (max-width: 992px) {
 
-    /* HEADER SECTION */
-
-     /* .header .container{
-       flex-direction: column;
-       row-gap: 4rem;
-       align-items: flex-start;
-    } */
+  
     .header .container .header__details h1{
         font-size: 45px;
         line-height: 60px;
-        
         }
-        /* .header .container .header__details,
-        .header .container .header__image{
-            width: 100%;
-        } */
-  
-    /* .header .container .header__image img{
-        max-height:380px;
-    }  */
 
     /* PLAYER SECTION */
 
