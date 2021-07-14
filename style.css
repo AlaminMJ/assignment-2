@@ -138,6 +138,7 @@ img{
     font-weight: 600;
     font-size: 28px;
     line-height: 40px;
+    margin: 10px 0;
 }
 .player .about{
     font-family: Poppins;
@@ -168,8 +169,6 @@ img{
 .match .container .match__details{
     width: 50%;
     padding-right: 40px;
-
-
 }
 .match .container .match__details h1{
     font-weight: 600;
@@ -349,6 +348,7 @@ footer .logo-area img{
     justify-content: center;
     align-items: center;
     column-gap: 10px;
+   margin: 10px 0;
 }
 
  footer .social-area a {
@@ -367,10 +367,10 @@ footer .logo-area img{
 footer .copy-write-area{
     margin-top: 20px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #000000;
+    color: #333333;
 }
 
 /* -------------------- Responsive Design --------------------*/
@@ -381,24 +381,24 @@ footer .copy-write-area{
 
     /* HEADER SECTION */
 
-    .header .container{
+     /* .header .container{
        flex-direction: column;
        row-gap: 4rem;
        align-items: flex-start;
-    }
+    } */
     .header .container .header__details h1{
-        font-size: 55px;
+        font-size: 45px;
         line-height: 60px;
         
         }
-        .header .container .header__details,
+        /* .header .container .header__details,
         .header .container .header__image{
             width: 100%;
-        }
+        } */
   
-    .header .container .header__image img{
+    /* .header .container .header__image img{
         max-height:380px;
-    }
+    }  */
 
     /* PLAYER SECTION */
 
@@ -412,15 +412,14 @@ footer .copy-write-area{
         display: flex;
        flex-direction: column;
        row-gap: 3rem;
-       
        align-items: flex-start;
        
     }
     .match .container .match__details,
     .match .container .match__image{
         width: 100%;
+        padding-right: 0;
     }
-    
 
     .group .container .groups .group{
         width: calc(50% - 1rem);
@@ -440,6 +439,26 @@ footer .copy-write-area{
 /* --------- Responsive Design  For Mobile-----------*/
 
 @media only screen and (max-width: 768px) {
+      /* HEADER SECTION */
+
+     .header .container{
+       flex-direction: column;
+       row-gap: 4rem;
+       align-items: flex-start;
+    } */
+    .header .container .header__details h1{
+        font-size: 55px;
+        line-height: 60px;
+        
+        }
+       .header .container .header__details,
+        .header .container .header__image{
+            width: 100%;
+        } 
+  
+    .header .container .header__image img{
+        max-height:380px;
+    }  
    
    /* PLAYER SECTION */
 
@@ -448,6 +467,7 @@ footer .copy-write-area{
     }
 
     /* MATCH SECTION */
+    
 
     .match .container{
         width: 80%;
@@ -460,7 +480,7 @@ footer .copy-write-area{
     .group .container .groups{
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 30px;
     }
     .group .container .groups .group{
         width: 100%;
