@@ -80,6 +80,7 @@ img{
 .header .container .header__details a:hover{
     background-color: #f34d8a;
     transform: translate(0,2px);
+    opacity: 0.8;
     
 
 }
@@ -103,7 +104,7 @@ img{
     padding: 2rem 0;
 }
 .players .container{
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     padding: 1rem 0;
  
@@ -117,6 +118,7 @@ img{
     background-color: white;
     padding: 10px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
 }
 
 .players .container .wraper .player .image{
@@ -146,46 +148,8 @@ img{
     color: #6C6C6C;
 } 
 
-/*--------------------  GROUP section -------------------- */
-.group{
-    padding: 2rem 0;
-}
-.group .container{
-    width: 80%;
-    margin: 0 auto;
-}
-.group .container .groups{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.group .container .groups .group{
-    width: calc(50% - 3rem);
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    padding: 10px;
-    border-radius: 10px;
 
-}
-.group .container .groups .group .group-datails{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
-    
-}
-.group .container .groups .group .group-datails li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 5px ;
-}
-.group .container .groups .group .group-datails img{
-    width: 50px;
-    height: 50px;
-    border: 50%;
-    margin-bottom: 5px;
-}
     /*--------------------  match section -------------------- */
 
 .match{
@@ -194,7 +158,7 @@ img{
     padding: 4rem 0 4rem;
 }
 .match .container{
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,7 +213,66 @@ img{
 .match .container .match__image img{
     max-height:438px;
 }
+/*--------------------  GROUP section -------------------- */
+.group{
+    padding: 2rem 0;
+}
+.group .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.group .container h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #0A0826;
 
+}
+.group .container .groups{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group .container .groups .group{
+    width: calc(50% - 2rem);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding:5px 10px;
+    border-radius: 10px;
+    border-radius: 10px;
+
+}
+.group .container .groups .group .group-title{
+    font-size: 25px;
+    margin-bottom:10px;
+    color:#494848;
+
+}
+.group .container .groups .group p{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #969696;
+}
+
+.group .container .groups .group .group-datails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+.group .container .groups .group .group-datails li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px ;
+}
+.group .container .groups .group .group-datails img{
+    width: 45px;
+    height: 45x;
+    border: 50%;
+    margin-bottom: 5px;
+}
 /*--------------------  Gellary section -------------------- */
 
 .gellary{
@@ -261,7 +284,7 @@ img{
     width: 80%;
 }
 .gellary .container h2{
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px;
     margin-bottom: 20px;
     font-weight: 600;
@@ -397,6 +420,12 @@ footer .copy-write-area{
     .match .container .match__image{
         width: 100%;
     }
+    
+
+    .group .container .groups .group{
+        width: calc(50% - 1rem);
+    }
+
      /* GALLERY SECTION */
     .gellary .container .wraper{
         grid-template-columns: repeat(3,1fr);
@@ -426,6 +455,16 @@ footer .copy-write-area{
         flex-direction: column;
         row-gap: 3rem;
         align-items: flex-start;
+    }
+    /* GROUP SECTION */
+    .group .container .groups{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .group .container .groups .group{
+        width: 100%;
+
     }
  /* GALLERY SECTION */
     .gellary .container .wraper{
