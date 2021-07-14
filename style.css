@@ -74,7 +74,7 @@ img{
     text-align: center;
     color:#ffffff;
     font-size: 16px;
-    transition: all .5s ease;
+    transition: all .8s ease;
 }
 
 .header .container .header__details a:hover{
@@ -180,7 +180,7 @@ img{
     text-align: center;
     color:#ffffff;
     font-size: 16px;
-    transition: all .3s ease;
+    transition: all .8s ease;
 }
 .match .container .match__details a:hover{
     background-color: #f34d8a;
