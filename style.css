@@ -1,8 +1,14 @@
+
+/* -------------------- GOOGLE FONT CDN LINK --------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* -------------------- BASIC CSS--------------------*/
+
 *,::after,::before{
     box-sizing: border-box;
-    
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -12,6 +18,7 @@ body{
     padding: 0;
 
 }
+
 h1,h2,h3,p{
     margin: 0;
     padding: 0;
@@ -24,6 +31,7 @@ ul{
 a{
     text-decoration: none;
 }
+
 img{
     max-width: 100%;
     height: auto;
@@ -138,6 +146,46 @@ img{
     color: #6C6C6C;
 } 
 
+/*--------------------  GROUP section -------------------- */
+.group{
+    padding: 2rem 0;
+}
+.group .container{
+    width: 80%;
+    margin: 0 auto;
+}
+.group .container .groups{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group .container .groups .group{
+    width: calc(50% - 3rem);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.group .container .groups .group .group-datails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+.group .container .groups .group .group-datails li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px ;
+}
+.group .container .groups .group .group-datails img{
+    width: 50px;
+    height: 50px;
+    border: 50%;
+    margin-bottom: 5px;
+}
     /*--------------------  match section -------------------- */
 
 .match{
@@ -201,7 +249,9 @@ img{
 .match .container .match__image img{
     max-height:438px;
 }
+
 /*--------------------  Gellary section -------------------- */
+
 .gellary{
     padding: 3rem 0;
 
@@ -300,7 +350,14 @@ footer .copy-write-area{
     color: #000000;
 }
 
+/* -------------------- Responsive Design --------------------*/
+
+/* --------- Responsive Design  For Tablet-----------*/
+
 @media only screen and (max-width: 992px) {
+
+    /* HEADER SECTION */
+
     .header .container{
        flex-direction: column;
        row-gap: 4rem;
@@ -320,11 +377,13 @@ footer .copy-write-area{
         max-height:380px;
     }
 
+    /* PLAYER SECTION */
+
     .players .container .wraper{ 
         grid-template-columns: repeat( 2, 1fr);
     }
 
-
+  /* MATCH SECTION */
     .match .container{
         width: 80%;
         display: flex;
@@ -338,36 +397,42 @@ footer .copy-write-area{
     .match .container .match__image{
         width: 100%;
     }
-
+     /* GALLERY SECTION */
     .gellary .container .wraper{
         grid-template-columns: repeat(3,1fr);
         
     }
+     /* FOOTER SECTION */
     footer .logo-area img{
         max-width: 300px ;
     }
 
 }
-
+/* --------- Responsive Design  For Mobile-----------*/
 
 @media only screen and (max-width: 768px) {
+   
+   /* PLAYER SECTION */
+
     .players .container .wraper{ 
         grid-template-columns: 1fr;
     }
+
+    /* MATCH SECTION */
+
     .match .container{
         width: 80%;
         display: flex;
-       flex-direction: column;
-       row-gap: 3rem;
-       
-       align-items: flex-start;
-       
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: flex-start;
     }
-
+ /* GALLERY SECTION */
     .gellary .container .wraper{
         grid-template-columns: repeat(2,1fr);
         
     }
+         /* FOOTER SECTION */
     footer .logo-area img{
         max-width: 250px ;
     }
