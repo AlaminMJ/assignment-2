@@ -35,6 +35,7 @@ img{
     background-color: #2D25A0;
     padding: 4rem 0 4rem;
 }
+
 .header .container{
     width: 85%;
     display: flex;
@@ -43,7 +44,8 @@ img{
     margin:0  auto; 
     overflow: hidden;
 }
-.header .container .header__details{
+.header .container .header__details,
+.header .container .header__image{
     width: 50%;
 }
 .header .container .header__details h1{
@@ -51,8 +53,7 @@ img{
     font-weight: 600;
     color: #ffffff;
     line-height: 80px;
-    width: 500px;
-    display: block;
+
 }
 .header .container .header__details a{
     
@@ -65,6 +66,7 @@ img{
     font-size: 16px;
     transition: all .3s ease;
 }
+
 .header .container .header__details a:hover{
     background-color: #f34d8a;
     transform: translate(0,2px);
@@ -76,11 +78,11 @@ img{
     font-size: 16px;
 } 
 
-.header .container .header__image{
-    width: 50%;
-}
+
 .header .container .header__image img{
-    max-height:438px;
+     max-height:450px;
+     margin: 0 auto;
+    
 }
 
 /* -------------------- players section --------------------*/
@@ -106,9 +108,7 @@ img{
     padding: 10px; 
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.player .datails{
-    /* background-color: teal; */
-}
+
 .player .name{
     color: #18191F;
     font-weight: 600;
@@ -125,11 +125,7 @@ img{
 }
 
 
-
-
-
-
-
+/*--------------------  match section -------------------- */
 
 .match{
     width: 100%;
@@ -144,29 +140,24 @@ img{
     margin:0  auto; 
     overflow: hidden;
 }
-.match .container .header__details{
+.match .container .match__details{
     width: 50%;
-    padding-right: 40px;
+
 }
-.match .container .header__details h1{
-    /* font-weight: 600; */
-    /* color: #18191F; */
-    line-height: 80px;
-    /* width: 500px; */
-    display: block;
-    font-weight: bold;
+.match .container .match__details h1{
+    font-weight: 600;
     font-size: 40px;
     line-height: 55px;
     color: #0A0826;
 
 }
-.match .container .header__details p{
+.match .container .match__details p{
     color: #6c6c6c;
     font-size: 15px;
     line-height: 28px;
     
 }
-.match .container .header__details a{
+.match .container .match__details a{
     
     background-color: #E02C6D;
     margin-top: 10px;
@@ -177,31 +168,103 @@ img{
     font-size: 16px;
     transition: all .3s ease;
 }
-.match .container .header__details a:hover{
+.match .container .match__details a:hover{
     background-color: #f34d8a;
     transform: translate(0,2px);
     
 
 }
-.match .container .header__details i{
+.match .container .match__details i{
     margin-left: -20px;
     font-size: 16px;
     padding-left: 30px;
 } 
 
-.match .container .header__image{
+.match .container .match__image{
     width: 50%;
 }
-.match .container .header__image img{
+.match .container .match__image img{
     max-height:438px;
 }
-@media only screen and (max-width: 990px){
-    .header .container .header__details h1{
-        /* font-size: 55px;
-        line-height: 70px; */
-        }
+/*--------------------  Gellary section -------------------- */
+.gellary{
+    padding: 3rem 0;
+
 }
-@media only screen and (max-width: 874px) {
+.gellary .container{
+    margin: 0 auto;
+    width: 80%;
+}
+.gellary .container h2{
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #0A0826;
+}
+.gellary .container .wraper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.gellary .container .wraper .item{
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.gellary .container .wraper .item:hover.over-lay{
+    width: 100%;
+    transform: rotate(60deg);
+}
+.gellary .container .wraper .item .over-lay{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.37);
+   
+}
+.gellary .container .wraper .item .over-lay a{
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: #f34d8a;
+}
+
+/*--------------------  footer section -------------------- */
+
+footer{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .logo-area img{
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+ footer .social-area a {
+    width: 40px;
+    height: 40px;
+  
+    border-radius: 50%;
+    background-color: aqua;
+    display: inline-block;
+}
+footer .copy-write-area{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 900px) {
     .header .container{
        flex-direction: column;
        row-gap: 4rem;
@@ -212,15 +275,66 @@ img{
         line-height: 60px;
         
         }
-    .header .container .header__image{
-        width: 100%;
-    }
-    .header .container .header__image{
-        width: 100%;
-    }
+        .header .container .header__details,
+        .header .container .header__image{
+            width: 100%;
+        }
+  
     .header .container .header__image img{
         max-height:380px;
     }
 
+    .players .container .wraper{ 
+        grid-template-columns: repeat( 2, 1fr);
+    }
+
+
+    .match .container{
+        width: 80%;
+        display: flex;
+       flex-direction: column;
+       row-gap: 3rem;
+       
+       align-items: flex-start;
+       
+    }
+    .match .container .match__details,
+    .match .container .match__image{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 664px) {
+    .players .container .wraper{ 
+        grid-template-columns: 1fr;
+    }
+    .match .container{
+        width: 80%;
+        display: flex;
+       flex-direction: column;
+       row-gap: 3rem;
+       /* justify-content: flex-start; */
+       align-items: flex-start;
+       
+    }
+    .match .container .match__details h1{
+        /* line-height: 80px;
+        display: block;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 55px;
+        color: #0A0826; */
+        width: 500px;
+    
+    }
+    .match .container .match__details p{
+        /* color: #6c6c6c;
+        font-size: 15px;
+        line-height: 28px; */
+        width: 500px;
+
+        
+    }
 
 }
